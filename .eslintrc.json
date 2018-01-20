@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "babel",
+    "react"
+  ],
+  "extends": ["google", "plugin:react/recommended"],
+  "rules": {
+    "comma-dangle" : 0,
+    "max-len": 0,
+    "no-extend-native": ["error", {
+      "exceptions": ["Promise"]
+    }],
+    "padded-blocks": 0,
+
+    "no-invalid-this": 0,
+    "babel/no-invalid-this": 0,
+
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": false,
+        "MethodDefinition": false,
+        "ClassDeclaration": false
+      }
+    }]
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "0.14.8"
+    }
+  }
+}
