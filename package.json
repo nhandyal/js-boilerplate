@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/nhandyal/js-boilerplate/issues"
   },
-  "homepage": "https://github.com/nhandyal/self-control#readme",
+  "homepage": "https://github.com/nhandyal/js-boilerplate",
   "dependencies": {
     "babel-polyfill": "6.26.0",
     "babel-runtime": "6.26.0",

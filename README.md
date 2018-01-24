@@ -10,3 +10,6 @@ js-boilerplate
 - start: Start the webpack dev-server.
 - test: Run the test suite.
 - watch: Run webpack with file watching enabled.
+
+# Misc
+- `scripts/init_js_project`: Clones this js-boilerplate project into the current working directory.
