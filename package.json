@@ -2,15 +2,17 @@
   "name": "JS-Boilerplate",
   "version": "1.0.0",
   "description": "JS Boilerplate Project",
-  "main": "src/index.js",
+  "main": "js/index.js",
   "scripts": {
-    "build": "npm run clean; ./scripts/package_assets.py; webpack -p",
-    "buildDev": "npm run clean; ./scripts/package_assets.py; webpack",
+    "build": "webpack -p",
+    "build-dev": "webpack",
+    "bundle": "./scripts/bundle_assets.py",
     "clean": "./scripts/clean.py",
-    "lint": "eslint ./src",
-    "lint-fix": "eslint ./src --fix; exit 0",
+    "lint": "eslint ./js",
+    "lint-fix": "eslint ./js --fix; exit 0",
     "start": "webpack-dev-server --progress --profile --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",

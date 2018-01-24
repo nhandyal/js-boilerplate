@@ -7,7 +7,7 @@ const PORT = process.env.PORT || '8888';
 
 module.exports = {
     entry: {
-        index: './src/index.js'
+        index: './js/index.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -16,6 +16,11 @@ module.exports = {
     },
 
     target: 'web',
+
+    watchOptions: {
+        aggregateTimeout: 300,
+        ignored: /node_modules/
+    },
 
     devServer: {
         contentBase: './dist',

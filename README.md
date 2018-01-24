@@ -1,12 +1,12 @@
 js-boilerplate
 ============
 
-# Build scripts
-A description of the npm run scripts.
+# NPM scripts
 - build: build the app with the production config.
 - buildDev: build the app with the development config.
-- clean: remove build files.
+- clean: remove dist directory
 - lint: run the linter.
-- lint-fix: try to auto-fix linter issues.
-- start: Start the webpack dev-server. Useful while building popup pages.
+- lint-fix: run the linter and try to auto-fix issues.
+- start: Start the webpack dev-server.
 - test: Run the test suite.
+- watch: Run webpack with file watching enabled.
