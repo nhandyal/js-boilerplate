@@ -9,20 +9,19 @@
   },
   "plugins": [
     "babel",
-    "react"
+    "react",
+    "flowtype"
   ],
   "extends": ["google", "plugin:react/recommended"],
   "rules": {
     "comma-dangle" : 0,
+    "indent": ["error", 4],
     "max-len": 0,
     "no-extend-native": ["error", {
       "exceptions": ["Promise"]
     }],
     "padded-blocks": 0,
-
-    "no-invalid-this": 0,
-    "babel/no-invalid-this": 0,
-
+    "quote-props": ["error", "as-needed"],
     "require-jsdoc": ["error", {
       "require": {
         "FunctionDeclaration": false,

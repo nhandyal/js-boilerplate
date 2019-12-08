@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# set -x
+
+JS_BOILERPLATE_SOURCE='https://codeload.github.com/nhandyal/react-app-boilerplate/zip/master'
+JS_BOILERPLATE_ZIP='/tmp/react-app-boilerplate.zip'
+TEMP_DIR='/tmp/rab'
+
+
+curl -o "$JS_BOILERPLATE_ZIP" "$JS_BOILERPLATE_SOURCE"
+unzip -d "$TEMP_DIR" "$JS_BOILERPLATE_ZIP"
+
+shopt -s dotglob
+mv -v "$TEMP_DIR"/react-app-boilerplate-master/* ./
+rm -rf ./scripts/bootstrap
+
+rm -rf "$TEMP_DIR" "$JS_BOILERPLATE_ZIP"
